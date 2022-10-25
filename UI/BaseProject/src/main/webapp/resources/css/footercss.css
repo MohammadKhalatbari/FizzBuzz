@@ -1,0 +1,16 @@
+
+.ui-widget-header {
+    background: #00aeaf -webkit-gradient(linear, left top, left bottom, from(rgba(0, 244, 255, 0.8)), to(rgba(255, 255, 255, 0)));
+}
+.ui-breadcrumb ul li {float:right;}
+            .ui-widget-header {background: #bce008 -moz-linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,0));
+                               border: 1px solid #000;
+            }
+.backgroun_color{
+    background-color: cadetblue;
+}
+.address_css{
+    text-align: right;
+    color: cornflowerblue;
+    font-size: 14px;
+}

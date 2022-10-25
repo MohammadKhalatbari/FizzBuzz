@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <title>FizzBuzzGame</title>
+    <h:outputStylesheet library="css" name="headcss.css"/>
+    <h:outputStylesheet library="css" name="table.css"/>
+    <h:outputStylesheet library="css" name="footercss.css"/>
+</h:head>
+<h:body style="background-image: url(/resources/images/ONEiO_Signin.jpg)" onload="showClock()">
+    <h:form id="main_form">
+        <table class="table">
+            <tr>
+                <td>
+                    <img src="/resources/images/ONEiO.png" width="100%"></img>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <div>
+                        <br/>
+                        <p:outputLabel for="input9" value="Please Enter Your Number"
+                                       style="font-weight:bold; font-size: medium"/>
+                        <br/>
+                        <br/>
+                        <p:inputNumber id="input9" value="#{fizzBuzzController.inputNumber}" minValue="1"
+                                       decimalPlaces="0" style="font-family: Cambria;font-size: medium"
+                                       inputStyle="text-align: right"/><br/><br/>
+                        <p:commandButton value="Submit" id="ajax" action="#{fizzBuzzController.save()}"
+                                         style="width:180px;height:31px;color: black;background-color:#00e2f0"
+                                         styleClass="ui-priority-primary" ajax='false'/>
+                    </div>
+                    <br/>
+                    <div align="left" dir="ltr">
+                        <p:tabView style="height:inherit;width: 700px">
+                            <p:tab title="Result"><br/>
+                                <h:outputText style="justify-content: left;font-size: medium;font-family: 'Open Sans' "
+                                              value="#{fizzBuzzController.result()}"/>
+                            </p:tab>
+                        </p:tabView>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </h:form>
+</h:body>
+</html>

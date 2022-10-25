@@ -1,0 +1,19 @@
+.table {
+    direction: rtl;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 20%;
+    margin-top: 5%;
+    background-color: white;
+
+
+}
+
+.body {
+    background-image: url("/resources/images/Owl.jpg");
+}
+.menubar{
+    color: green;
+}
